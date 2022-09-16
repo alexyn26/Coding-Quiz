@@ -1,0 +1,53 @@
+.Quiz{
+    display: flex;
+    justify-content: center;
+}
+.container{
+    display:block;
+}
+.row{
+    justify-content: center;
+    display: flex;
+    
+} 
+#Start{
+    align-content: center;
+    display: block;
+}
+.body{
+    align-content: center;
+    color:honeydew;
+}
+#timer{
+    display: block;
+    color: red;
+    font-size: 30px;
+}
+#score{
+    display: block;
+    align-content: center;
+}
+#playerInitials{
+    display: block;
+    align-content: center;
+}
+#quizQuestions{
+    display:block;
+    align-content: center;
+}
+#ans1 {
+    display: block;
+    align-content: center;
+}
+#ans2 {
+    display: block;
+    align-content: center;
+}
+#ans3 {
+    display: block;
+    align-content: center;
+}
+#ans4 {
+    display: block;
+    align-content: center;
+}
