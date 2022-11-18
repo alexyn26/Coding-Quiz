@@ -9,50 +9,41 @@
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     />
     <link rel="stylesheet" href="style.css" />
-    
     <title>Coding Quiz</title>
-  </head>
+    </head>
 
-  <body>
-    <header class="Quiz">
-      <h1 class="display-3">Coding Quiz Challenge</h1>
-    </header>
-    <div class="container">
-        <div class = "row">
-                <p>Try to answer the following code-related questions within the time limit. </p>
-                <p> Keep in mind that incorrect answers will penalize your score/time by ten seconds.</p>
-                <p></p>
-                
-        <p><button id ="Start">Start Quiz</button></p>
+    <body>
+      <div class = "scores"><a href = "scores.html">View Highscores</a></div>
+      <div class = "timer" id ="timer"> Time: <span id = "time"> 0</span></div>
 
-      <div class = "quiz">
-      
-      <br> <div>
-        <span id="timer">
-          <span id="time">60</span>Seconds      
-        </span>
+      <div class = "container">
+        <div id = initialDisplay class = "initialDisplay">
+          <h1>Coding Quiz</h1>
+          <p>
+            Try to answer the following code-related questions within the time
+          limit. Keep in mind that incorrect answers will penalize your
+          time by 15 seconds!
+          </p>
+          <button id = "startQuiz" onclick = "beginQuiz">Start</button>
+        </div>
+        <div id = "questions" class = "hide">
+          <h2 id = "questionNumber"></h2>
+          <div id = "answerChoices" class = "answerChoices"></div>
+        </div>
+        <div id = "endDisplay" class = "hide"></div>
+        <h2>Complete!</h2>
+        <p> Your score is <span id= "finalScore"></span>.</p>
+        <p>Enter your Initials <input type = "text" id = initials/>
+        <button id = "submitInitials"> Submit</button></p>
+
       </div>
-      <form id = "quizQuestions">
-      <button id = "ans1">Answer Choice 1</button>
-      <button id = "ans2">Answer Choice 2</button>
-      <button id = "ans3">Answer Choice 3</button>
-      <button id = "ans4">Answer Choice 4</button>
+      
+    </body>
 
-</form>
-</div>
-<br></div>
-      <form></form>
-      <br><div id = "score">High Scores</div>
-     <br><div id = "playerInitials">Initials</div>
-
-     <br> <button id = "submit">Submit</button>
-        <ol id = "highScores"> </ol>
-        </form>
-    </div>
-</div>
-    <script src="script.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+ 
+    <script src="questions.js"></script>
+    <script src = "quiz.js"></script>
+   
   </body>
 </html>
 
