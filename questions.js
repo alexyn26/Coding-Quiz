@@ -4,7 +4,7 @@ const quizQuestions = [
       correctAnswer: "alerts"
      },
      { question: "The condition in an if/else statement is enclosed with ______.",
-      answers: ["Quotes", "curly brackets", "parenthesis", "quare brackets"],
+      answers: ["Quotes", "curly brackets", "parenthesis", "square brackets"],
       correctAnswer: "parenthesis"
      },
      { question: "Arrays in JavaScript can be used to store_________.",
